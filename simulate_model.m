@@ -1,6 +1,6 @@
 function simulate_model()
     % MALARIA_MODEL_VALIDATION_WITH_CI
-    % AVULUNDIAH PHIRI
+    % AVULUNDIAH PHIRI| June 24, 2025
     % Empirical data (cases per 1000 population for years 2015-2023):
     obs = [218.94, 203.98, 188.00, 186.47, 182.14, 179.45, 180.33, 179.05, 176.74];
     years = 2015:2023;
