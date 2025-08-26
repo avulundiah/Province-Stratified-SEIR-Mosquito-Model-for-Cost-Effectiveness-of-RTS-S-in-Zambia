@@ -1,8 +1,6 @@
+% Avulundiah Edwin Phiri: 26 August 2025
 function create_geospatial_rollout()
-    % Load Zambia administrative boundaries
     zambia_shp = shaperead('gadm41_ZMB_1.shp'); % From GADM.org
-    
-    % Create figure with basemap
     fig = figure('Position', [100, 100, 1000, 800]);
     ax = usamap('zambia');
     geoshow(ax, zambia_shp, 'FaceColor', [0.9 0.9 0.9])
@@ -64,4 +62,5 @@ function eir_surface = create_transmission_surface(lat, lon)
     eir_base = 30 + 50*exp(-((lat+13).^2/5 + (lon-28).^2/15));
     rainfall_effect = 20*exp(-((lat+15).^2/8 + (lon-25).^2/10));
     eir_surface = eir_base + rainfall_effect;
+
 end
